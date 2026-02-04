@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum Vitae - Ruben Galvan</title>
+    <style>
+      /* ESTILOS GENERALES */
+      :root {
+        --primary-color: #2c3e50; /* Azul oscuro elegante */
+        --accent-color: #3498db; /* Azul más claro para enlaces/detalles */
+        --text-color: #333;
+        --bg-color: #f4f4f4;
+        --white: #ffffff;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* CONTENEDOR PRINCIPAL (HOJA) */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: var(--white);
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      /* ENCABEZADO */
+      header {
+        text-align: center;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        margin: 0;
+        color: var(--primary-color);
+        font-size: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .job-title {
+        font-size: 1.2em;
+        color: var(--accent-color);
+        margin-top: 5px;
+        font-weight: 600;
+      }
+
+      .contact-info {
+        margin-top: 15px;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+      }
+
+      /* SECCIONES */
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        border-left: 5px solid var(--accent-color);
+        padding-left: 10px;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+      }
+
+      /* EXPERIENCIA Y EDUCACIÓN */
+      .item {
+        margin-bottom: 20px;
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+      }
+
+      .item-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #000;
+      }
+
+      .item-subtitle {
+        font-style: italic;
+        color: #666;
+      }
+
+      .item-date {
+        font-size: 0.9em;
+        color: var(--accent-color);
+        font-weight: 600;
+        white-space: nowrap; /* Evita que la fecha se rompa */
+      }
+
+      ul {
+        margin-top: 5px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      /* HABILIDADES */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+      }
+
+      .skill-tag {
+        background-color: #eef2f5;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border-left: 3px solid var(--accent-color);
+        font-weight: 500;
+      }
+
+      /* AJUSTES PARA MÓVIL */
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+        .item-header {
+          flex-direction: column;
+        }
+        .contact-info {
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+
+      /* AJUSTES PARA IMPRESIÓN */
+      @media print {
+        body {
+          background-color: #fff;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none;
+          margin: 0;
+          width: 100%;
+          max-width: 100%;
+          padding: 20px;
+        }
+        /* Ocultar enlaces URL al imprimir si lo deseas */
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Ruben Galvan</h1>
+        <div class="job-title">Estudiante FP Grado Superior</div>
+        <div class="contact-info">
+          <span>📍 Tarragona, España</span>
+          <span>📧 ruga536@vidalibarraquer.net</span>
+          <span>📱 +34 691 905 373</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Experiencia Laboral</h2>
+        <p>
+          Practicas de Erasmus + en Orleans, Francia
+          <br />
+          Practicas en la empresa AVK. Valvulas
+        </p>
+      </section>
+
+
+            
+            
+
+        
+
+      <section>
+        <h2>Formación Académica</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title"
+                >Grado medio sistemas microinformaticos y redes</span>
+              <br/>
+              <span class="item-subtitle">Francesc Vidal i Barraquer</span>
+            </div>
+            <span class="item-date">2023 - 2025</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-tag">HTML5 & CSS3</div>
+          <div class="skill-tag">JavaScript (ES6+)</div>
+          <div class="skill-tag">React / Vue.js</div>
+          <div class="skill-tag">Gestión de Bases de Datos</div>
+          <div class="skill-tag">Inglés (C1)</div>
+          <div class="skill-tag">Trabajo en Equipo (Agile)</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
